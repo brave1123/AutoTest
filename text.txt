@@ -3,3 +3,4 @@ hello
 这是master上的内容
 这是mergedemo上的内容
 冲突解决啦
+version1
