@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SuiteName" parallel="methods" thread-count="2">
-	<!-- 
-		parallel="tests"级别：不同的test tag下的用例可以在不同的线程下执行，
+		<!--parallel="tests"级别：不同的test tag下的用例可以在不同的线程下执行，
 		相同的test tag下的用例只能在同一个线程中去执行，（test tag指的是配置文件中test标签里面的东西）
 		parallel="classes"级别：相同的class tag下的用例在同一线程中执行，不同的class tag下的用例可以在不同的线程中执行
 		parallel="methods"级别：所有用例都可以在不同的线程下去执行
 		thread-count：代表最大并发线程数
 		xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
-		threadPoolSize这个是线程池的大小，就相当于一个水池，但不一定灌满水。thread-count这个是线程总数，代表用多少线程执行
-	 -->
+		threadPoolSize这个是线程池的大小，就相当于一个水池，但不一定灌满水。thread-count这个是线程总数，代表用多少线程执行-->
 	<test name="demo1">
 		<classes>			
 			<class name="con.course.code.Chapter5.multThread.MultThreadOnXml"></class>
