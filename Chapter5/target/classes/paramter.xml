@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteName">
+	<test name="runAll">
+		<parameter name="name" value="小明"></parameter>	
+		<parameter name="age" value="10"></parameter>	
+		<classes>			
+			<class name="con.course.code.Chapter5.paramter.ParamterTest"></class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
