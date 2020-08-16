@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="con.course.code.cases.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="loginTrue"/>
+        </methods>
+      </class> <!-- con.course.code.cases.LoginTest -->
+      <class name="con.course.code.cases.GetUserInfoTest">
+        <methods>
+          <include name="getUserInfo"/>
+        </methods>
+      </class> <!-- con.course.code.cases.GetUserInfoTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

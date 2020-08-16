@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="con.course.code.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="con.course.code.cases.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="loginTrue"/>
+        </methods>
+      </class> <!-- con.course.code.cases.LoginTest -->
+      <class name="con.course.code.cases.GetUserInfoTest">
+        <methods>
+          <include name="getUserInfo"/>
+        </methods>
+      </class> <!-- con.course.code.cases.GetUserInfoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

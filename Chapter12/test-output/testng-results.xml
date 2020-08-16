@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="12943" started-at="2020-08-15T09:51:34Z" finished-at="2020-08-15T09:51:47Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:con.course.code.cases.LoginTest@2cbb3d47]" name="loginTrue" class="con.course.code.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+    </groups>
+    <test name="Test" duration-ms="12943" started-at="2020-08-15T09:51:34Z" finished-at="2020-08-15T09:51:47Z">
+      <class name="con.course.code.cases.GetUserInfoListTest">
+        <test-method status="PASS" signature="getUserListInfo()[pri:0, instance:con.course.code.cases.GetUserInfoListTest@add0edd]" name="getUserListInfo" duration-ms="181" depends-on-groups="loginTrue" started-at="2020-08-15T09:51:47Z" description="获取性别为男的用户信息" finished-at="2020-08-15T09:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+      </class> <!-- con.course.code.cases.GetUserInfoListTest -->
+      <class name="con.course.code.cases.AddUserTest">
+        <test-method status="PASS" signature="addUser()[pri:0, instance:con.course.code.cases.AddUserTest@527e5409]" name="addUser" duration-ms="107" depends-on-groups="loginTrue" started-at="2020-08-15T09:51:35Z" description="添加用户接口接口" finished-at="2020-08-15T09:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- con.course.code.cases.AddUserTest -->
+      <class name="con.course.code.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:con.course.code.cases.LoginTest@2cbb3d47]" name="beforeTest" is-config="true" duration-ms="48" started-at="2020-08-15T09:51:34Z" description="测试准备工作,获取HttpClient对象" finished-at="2020-08-15T09:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:con.course.code.cases.LoginTest@2cbb3d47]" name="loginTrue" duration-ms="848" started-at="2020-08-15T09:51:34Z" description="用户成功登陆接口" finished-at="2020-08-15T09:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:con.course.code.cases.LoginTest@2cbb3d47]" name="loginFalse" duration-ms="119" started-at="2020-08-15T09:51:35Z" description="用户登陆失败接口" finished-at="2020-08-15T09:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- con.course.code.cases.LoginTest -->
+      <class name="con.course.code.cases.GetUserInfoTest">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:con.course.code.cases.GetUserInfoTest@1198b989]" name="getUserInfo" duration-ms="2139" depends-on-groups="loginTrue" started-at="2020-08-15T09:51:35Z" description="获取userId为1的用户信息" finished-at="2020-08-15T09:51:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfo -->
+      </class> <!-- con.course.code.cases.GetUserInfoTest -->
+      <class name="con.course.code.cases.UpdateUserInfoTest">
+        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:con.course.code.cases.UpdateUserInfoTest@7ff95560]" name="updateUserInfo" duration-ms="2265" depends-on-groups="loginTrue" started-at="2020-08-15T09:51:37Z" description="更改用户信息" finished-at="2020-08-15T09:51:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserInfo -->
+        <test-method status="PASS" signature="deleteUser()[pri:0, instance:con.course.code.cases.UpdateUserInfoTest@7ff95560]" name="deleteUser" duration-ms="7190" depends-on-groups="loginTrue" started-at="2020-08-15T09:51:40Z" description="删除用户" finished-at="2020-08-15T09:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- con.course.code.cases.UpdateUserInfoTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

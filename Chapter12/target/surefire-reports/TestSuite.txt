@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 33.965 sec <<< FAILURE! - in TestSuite
+loginTrue(con.course.code.cases.LoginTest)  Time elapsed: 0.027 sec  <<< FAILURE!
+java.io.IOException: Could not find resource databaseConfig.xml
+	at con.course.code.cases.LoginTest.loginTrue(LoginTest.java:40)
+
+loginFalse(con.course.code.cases.LoginTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.io.IOException: Could not find resource databaseConfig.xml
+	at con.course.code.cases.LoginTest.loginFalse(LoginTest.java:55)
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+       <class name="con.course.code.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"/>
+                    <include name="loginFalse"/>
+                </methods>
+            </class>
+            <class name="con.course.code.cases.AddUserTest">
+                <methods>
+                    <include name="addUser"/>
+                </methods>
+            </class>
+            <class name="con.course.code.cases.GetUserInfoTest">
+                <methods>
+                    <include name="getUserInfo"/>
+                </methods>
+            </class>
+            <class name="con.course.code.cases.UpdateUserInfoTest">
+                <methods>
+                    <include name="updateUserInfo"/>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+
+            <class name="con.course.code.cases.GetUserInfoListTest">
+                <methods>
+                    <include name="getUserListInfo"/>
+                </methods>
+            </class>
+    </classes>
+  </test> <!-- Test -->
+  <listeners>
+  	<listener class-name="con.course.code.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+</suite> <!-- Suite -->

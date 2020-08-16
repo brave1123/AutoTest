@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="con.course.code.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="con.course.code.cases.LoginTest">
+        <methods>
+          <include name="loginFalse"/>
+          <include name="beforeTest"/>
+          <include name="loginTrue"/>
+        </methods>
+      </class> <!-- con.course.code.cases.LoginTest -->
+      <class name="con.course.code.cases.AddUserTest">
+        <methods>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- con.course.code.cases.AddUserTest -->
+      <class name="con.course.code.cases.UpdateUserInfoTest">
+        <methods>
+          <include name="deleteUser"/>
+          <include name="updateUserInfo"/>
+        </methods>
+      </class> <!-- con.course.code.cases.UpdateUserInfoTest -->
+      <class name="con.course.code.cases.GetUserInfoListTest">
+        <methods>
+          <include name="getUserListInfo"/>
+        </methods>
+      </class> <!-- con.course.code.cases.GetUserInfoListTest -->
+      <class name="con.course.code.cases.GetUserInfoTest">
+        <methods>
+          <include name="getUserInfo"/>
+        </methods>
+      </class> <!-- con.course.code.cases.GetUserInfoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
