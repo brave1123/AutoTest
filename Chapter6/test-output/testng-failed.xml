@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="con.course.code.Chapter6.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="con.course.code.Chapter6.TestMethodDemo">
+        <methods>
+          <include name="test1"/>
+          <include name="logDem0"/>
+        </methods>
+      </class> <!-- con.course.code.Chapter6.TestMethodDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4118" started-at="2020-07-30T06:59:39Z" finished-at="2020-07-30T06:59:44Z">
+  <suite name="Default suite" duration-ms="85" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
     <groups>
+      <group name="server">
+        <method signature="GroupsOnMethod.test1()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test1" class="con.course.code.Chapter5.groups.GroupsOnMethod"/>
+        <method signature="GroupsOnMethod.test2()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test2" class="con.course.code.Chapter5.groups.GroupsOnMethod"/>
+      </group> <!-- server -->
+      <group name="client">
+        <method signature="GroupsOnMethod.test3()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test3" class="con.course.code.Chapter5.groups.GroupsOnMethod"/>
+        <method signature="GroupsOnMethod.test4()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test4" class="con.course.code.Chapter5.groups.GroupsOnMethod"/>
+      </group> <!-- client -->
     </groups>
-    <test name="Default test" duration-ms="4118" started-at="2020-07-30T06:59:39Z" finished-at="2020-07-30T06:59:44Z">
-      <class name="con.course.code.Chapter5.TimeOutTest">
-        <test-method status="FAIL" signature="testError()[pri:0, instance:con.course.code.Chapter5.TimeOutTest@6ee12bac]" name="testError" duration-ms="2034" started-at="2020-07-30T06:59:40Z" finished-at="2020-07-30T06:59:42Z">
-          <exception class="org.testng.internal.thread.ThreadTimeoutException">
-            <message>
-              <![CDATA[Method con.course.code.Chapter5.TimeOutTest.testError() didn't finish within the time-out 2000]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method con.course.code.Chapter5.TimeOutTest.testError() didn't finish within the time-out 2000
-at java.util.concurrent.FutureTask.setException(FutureTask.java:248)
-at java.util.concurrent.FutureTask.run(FutureTask.java:271)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+    <test name="Default test" duration-ms="85" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
+      <class name="con.course.code.Chapter5.groups.GroupsOnMethod">
+        <test-method status="PASS" signature="beforeGroups()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="beforeGroups" is-config="true" duration-ms="6" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testError -->
-        <test-method status="PASS" signature="testSuccess()[pri:0, instance:con.course.code.Chapter5.TimeOutTest@6ee12bac]" name="testSuccess" duration-ms="2011" started-at="2020-07-30T06:59:42Z" finished-at="2020-07-30T06:59:44Z">
+        </test-method> <!-- beforeGroups -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test1" duration-ms="6" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccess -->
-      </class> <!-- con.course.code.Chapter5.TimeOutTest -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test2" duration-ms="3" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterGroups()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="afterGroups" is-config="true" duration-ms="1" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterGroups -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test3" duration-ms="2" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:con.course.code.Chapter5.groups.GroupsOnMethod@29f69090]" name="test4" duration-ms="3" started-at="2020-08-12T09:13:06Z" finished-at="2020-08-12T09:13:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+      </class> <!-- con.course.code.Chapter5.groups.GroupsOnMethod -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
