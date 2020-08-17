@@ -10,7 +10,7 @@ public class ConfigFile {
 	private static Properties properties = new Properties();
 	
 	public static String getUrl(InterfaceName name) throws IOException{
-		FileInputStream fis = new FileInputStream("resource/application.properties");
+		FileInputStream fis = new FileInputStream("src/main/resources/application.properties");
 	     properties.load(fis);
         String address = properties.getProperty("test.url");
         String uri = "";
